@@ -6,9 +6,18 @@ A WKWebView with an NSVisualEffectView as a background for even more beautiful h
 ## Goal
 Before Xcode 9.4 (macOS 10.13.6), there was a bug that made the ability of combining the two objects impossible. The purpose of this tiny project is to display a live demo of WKWebView and NSVisualEffectView working in harmony, as well as the possibilities of working with the two in sync. Happy coding!
 
+## Deprecation Note
+Recently, Apple released a few new additions to the NSVisualEffectsView class – and with those additions came deprecations. There are now two versions of the project that you may choose to use with clients, depending on what your deployment target is and whom your current/prospective audience may be.
+
+### Compatibility
+- macOS 10.14 and later (947bb5b): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/underwindowbackground">NSVisualEffectView.Material.windowUnderBackground</a> (Latest Build)
+- macOS 10.14 and earlier (85b3844): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/appearancebased">NSVisualEffectView.Material.appearanceBased</a> (Deprecated)
+
+<b>Note:</b> Using Material.appearanceBased (85b3844) is still your best bet for reaching the largest percentage of users across the highest number of OS software updates. Although deprecated in macOS 10.15, this will still function on all versions of macOS 10.10-10.15 (including Catalina). I recommend using this until at least macOS 10.16 (or until they completely remove the deprecation entirely from production).
+
 ## MIT License
 
-Copyright © 2018 Justin Bush. All rights reserved.
+Copyright © 2020 Justin Bush. All rights reserved.
 
 ```
 Permission is hereby granted, free of charge, to any person obtaining a copy
