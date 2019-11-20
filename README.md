@@ -10,10 +10,10 @@ Before Xcode 9.4 (macOS 10.13.6), there was a bug that made the ability of combi
 Recently, Apple released a few new additions to the NSVisualEffectsView class – and with those additions came deprecations. There are now two versions of the project that you may choose to use with clients, depending on what your deployment target is and whom your current/prospective audience may be.
 
 ### Compatibility
-- macOS 10.14 and later (947bb5b): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/underwindowbackground">NSVisualEffectView.Material.windowUnderBackground</a> (Latest Build)
-- macOS 10.14 and earlier (85b3844): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/appearancebased">NSVisualEffectView.Material.appearanceBased</a> (Deprecated)
+- ![#01b523](https://placehold.it/15/01b523/000000?text=+) macOS 10.14 and later (<a href="https://github.com/revblaze/WKBlurEffect/commit/f183da0d2dbb36072604ba534ae80e45b229fdcb">947bb5b</a>): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/underwindowbackground">NSVisualEffectView.Material.windowUnderBackground</a> (Latest Build)
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) macOS 10.14 and earlier (<a href="https://github.com/revblaze/WKBlurEffect/commit/947bb5b0d4d50f3d20005069e9a88ac0b23f257c">85b3844</a>): <a href="https://developer.apple.com/documentation/appkit/nsvisualeffectview/material/appearancebased">NSVisualEffectView.Material.appearanceBased</a> (Deprecated)
 
-<b>Note:</b> Using Material.appearanceBased (85b3844) is still your best bet for reaching the largest percentage of users across the highest number of OS software updates. Although deprecated in macOS 10.15, this will still function on all versions of macOS 10.10-10.15 (including Catalina). I recommend using this until at least macOS 10.16 (or until they completely remove the deprecation entirely from production).
+<b>Note:</b> Using Material.appearanceBased (<a href="https://github.com/revblaze/WKBlurEffect/commit/947bb5b0d4d50f3d20005069e9a88ac0b23f257c">85b3844</a>) is still your best bet for reaching the largest percentage of users across the highest number of OS software updates. Although deprecated in macOS 10.15, this will still function on all versions of macOS 10.10-10.15 (including Catalina). I recommend using this until at least macOS 10.16 (or until they completely remove the deprecation entirely from production).
 
 ## MIT License
 
